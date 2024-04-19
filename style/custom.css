@@ -1,0 +1,116 @@
+@charset "UTF-8";
+@keyframes scale {
+  0%, 100% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #666;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "微軟正黑體", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", verdana, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif;
+  overflow-y: auto;
+  transition: all 0.25s ease-in-out;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 48px 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.sidebar-item {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+.sidebar-item:hover {
+  color: #0e728c;
+  background-color: #F2F2F2;
+}
+
+.sidebar-item:focus {
+  color: #ffffff;
+  background-color: #eba000;
+}
+
+.sidebar-item.active {
+  background-color: #eba000;
+}
+
+.content {
+  margin-left: 10rem;
+  padding: 20px;
+}
+.content img {
+  margin-top: 20px;
+  height: 38rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.content h2 {
+  margin: 10px 0px;
+  font-weight: 600;
+}
+.content .imgSmall {
+  margin-top: 5px;
+  height: 12rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.content .index-img {
+  height: 48.2rem !important;
+}
+.content a {
+  background-color: #e8e8e8 !important;
+  color: #333;
+  padding: 8px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.content a:hover {
+  background-color: #898989 !important;
+  color: #fff;
+}
+.content .title {
+  background-color: #eba000;
+  border-radius: 50px;
+  color: #fff;
+  padding: 7px 15px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 20px;
+}
+
+.sub-content {
+  display: none;
+}
+
+.sub-content.active {
+  display: block;
+}
+
+.collapse.show {
+  display: block;
+}/*# sourceMappingURL=custom.css.map */

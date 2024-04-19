@@ -1,0 +1,128 @@
+$primaryColor: #0e728c
+$PrimaryColorDark: #083d4a
+$greenColor:#0bb779
+$yellowColor: #eba000
+$blueColor: #0daed3 
+$contentColor: #FFFEFA
+$indexColor: #9F8870
+$secondaryColor: #e6d9cc
+$accessBlueColor: #29C6E2
+$whiteColor: #ffffff
+$greyColor: #8c8c8c
+$greyColorLight: #F2F2F2
+$black: #000000
+$textColor: #333333
+$primaryColorLight: #19c4ef
+$dangerColor: #E64434
+
+
+@mixin size ($w,$h:$w)
+  width: $w
+  height: $h
+
+@mixin flexCenter
+  display: flex
+  justify-content: center
+  align-items: center
+
+@mixin flexColumn
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center  
+
+@mixin borderSet($w,$color)
+  border: $w soild 
+  border-color: $color
+
+@keyframes scale
+        0%,100%
+          opacity: 0
+        70%
+          opacity: 1
+        0%
+          transform: translateY(20px)
+        100%
+          transform: translateY(0)
+
+html,body
+  width: 100%
+  margin: 0
+  padding: 0
+  color: #666
+  font-size: 1.1rem
+  +flexColumn
+  font-family: "微軟正黑體", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", verdana, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", Sans-Serif
+  overflow-y: auto
+  transition: all 0.25s ease-in-out
+
+
+.sidebar
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  z-index: 100
+  padding: 48px 0
+  overflow-x: hidden
+  overflow-y: auto
+
+.sidebar-item
+  padding: 8px 16px
+  cursor: pointer
+  &:hover
+    color: $primaryColor
+    background-color: $greyColorLight
+.sidebar-item:focus
+  color: $whiteColor
+  background-color: $yellowColor
+
+.sidebar-item.active
+  background-color: $yellowColor
+
+.content
+  margin-left: 10rem
+  padding: 20px
+  & img
+    margin-top:20px
+    height: 38rem
+    border-radius: 5px
+    box-shadow: 0px 0px 8px rgba(0,0,0,.5)
+    overflow: hidden
+  & h2
+    margin: 10px 0px
+    font-weight: 600
+  & .imgSmall
+    margin-top:5px
+    height: 12rem
+    border-radius: 5px
+    box-shadow: 0px 0px 8px rgba(0,0,0,.5)
+    overflow: hidden  
+  & .index-img
+    height: 48.2rem !important 
+  & a
+    background-color: #e8e8e8 !important
+    color: #333
+    padding: 8px
+    text-decoration: none
+    border-radius: 4px   
+    &:hover
+      background-color: #898989 !important
+      color: #fff  
+  & .title
+    background-color: $yellowColor
+    border-radius: 50px
+    color: #fff
+    padding: 7px 15px
+    width: fit-content
+    margin-top: 20px
+.sub-content
+  display: none
+
+
+.sub-content.active
+  display: block
+  
+
+.collapse.show
+  display: block
