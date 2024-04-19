@@ -3,38 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>資安教育平台操作手冊</title>
+  <title>資安教育平台操作手冊-管理員</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="style/custom.css">
+  <link rel="stylesheet" href="/style/custom.css">
 </head>
 <body>
  <div class="container">
   <div class="row p-3">
     <div class="col-2 sidebar card m-2">
-      <div class="sidebar-item" data-bs-toggle="collapse" href="#start" role="button"> 上課之前
+      <div class="sidebar-item" data-bs-toggle="collapse" href="#start" role="button"> 開課之前
        <i class="mt-1 fas fa-chevron-down ms-5"></i>
       </div>
       <div class="collapse" id="start">
         <div class="sidebar-item ps-4 " data-content="start-1">
-          <i class="bi bi-caret-right"></i> 登入
+          <i class="bi bi-caret-right"></i> 學員名單建立
         </div>
-        <div class="sidebar-item ps-4" data-content="start-2">
-          <i class="bi bi-caret-right"></i> 更改密碼
-        </div>
+        
       </div>
-      <div class="sidebar-item" data-bs-toggle="collapse" href="#function" role="button" aria-expanded="false" aria-controls="menu2"> 功能總覽
+      <div class="sidebar-item" data-bs-toggle="collapse" href="#function" role="button" aria-expanded="false" aria-controls="menu2"> 如何開課
       <i class="mt-1 fas fa-chevron-down  ms-5"></i>
       </div>
       <div class="collapse" id="function">
         <div class="sidebar-item ps-4" data-content="function-1">
-          <i class="bi bi-caret-right"></i> 首頁
+          <i class="bi bi-caret-right"></i> 新增課程類型
         </div>
         <div class="sidebar-item ps-4" data-content="function-2">
-          <i class="bi bi-caret-right"></i> 教育平台簡介
+          <i class="bi bi-caret-right"></i> 新增課程
         </div>
         <div class="sidebar-item ps-4" data-content="function-3">
           <i class="bi bi-caret-right"></i> 最新消息
@@ -67,107 +64,105 @@
       
     <div class="col-9 content w-100">
       <div id="submenu" class="sub-content active">
-        <h2>資安教育訓練平台使用手冊</h2>
-        <img src="images/img-index.png" alt="Placeholder Image" class="index-img">
+        <h2>資安教育訓練平台使用手冊-管理員</h2>
+        <img src="/images/img-adminIndex.png" alt="Placeholder Image" >
         <p></p>
       </div>
       <div id="start-1" class="sub-content">
-        <h2>登入</h2>
-        <p class="mt-5">歡迎使用資安教育訓練平台，在開始上課前，請先準備好貴機構的<span style="background-color:#842e1a ;color:#fff;border-radius: 4px;" class="p-2">十位機構代碼</span>，此為您首次登入時的預設密碼。帳號為您當初申請時提供的Email。</p>
-        <img src="images/img-login.png" alt="Placeholder Image">
-       
+        <h2>學員名單建立</h2>
+        <p class="mt-5">
+          選擇上方選單<span style="background-color:#894610 ;color:#fff;border-radius: 4px;" class="p-2">名單管理</span>中
+          <span style="background-color:#ffc107 ;color:#fff;border-radius: 4px;" class="p-2">匯入學員資料</span>
+          上傳學員名單的excel表即可。</p>
+        <img src="/images/img-adminIndex.png" alt="Placeholder Image">
       </div>
-      <div id="start-2" class="sub-content">
-        <h2>更改密碼</h2>
-        <p class="mt-5">完成首次登入後，可至最右側用戶名稱下拉選單前往<span style="background-color:#e8e8e8;border-radius: 4px;" class="p-2">個人資料設定</span>更改密碼。</p>
-        <img src="images/img-changePWD.png"  alt="Placeholder Image">
-        <img src="images/img-PWDpage.png"  alt="Placeholder Image">
-        <img src="images/img-PWDmodal.png"  alt="Placeholder Image">
-      </div>
+ 
       <div id="function-1" class="sub-content">
-        <h2>首頁</h2>
-        <p class="mt-5">首頁顯示最新的課程，並顯示推薦適合的上課對象。提供優先選擇最適合的職能課程，也非常歡迎學員跨職能選擇有興趣的課程。</p>
-        <p class="mt-2">直接點選<span style="background-color:#0e728c ;color:#fff;border-radius: 4px;" class="p-2">前往課程</span>可直接參與課程。</p>
-        <img src="images/img-index.png" alt="Placeholder Image" class="index-img">
-        <img src="images/img-media.png" alt="Placeholder Image" >
+        <h2>新增課程類型</h2>
+        <p class="mt-5">點選使用者名稱下拉選單，選擇<span style="background-color:#e8e8e8 ; border-radius: 4px;" class="p-2">課程授權設定</span></p>
+        <img src="/images/img-admin-purview.png" alt="Placeholder Image">
+        <p class="mt-5">點選<span style="background-color:#0e728c ;color:#fff;border-radius: 4px;" class="p-2">新增課程類型</span>即可新增。</p>
+        <img src="/images/img-admin-addcourseStyle.png" alt="Placeholder Image" >
+        <p class="mt-5"><span style="background-color:#ff2889 ;color:#fff;border-radius: 4px;" class="p-2">注意</span>課程層級為必填！</p>
+        <img src="/images/img-admin-courseStyle.png" alt="Placeholder Image" style="height: 29rem;">
       </div>
       <div id="function-2" class="sub-content">
-        <h2>教育平台簡介</h2>
+        <h2>新增課程</h2>
         <p class="mt-5">簡介關於計畫的緣起與目的。</p>
-        <img src="images/img-intro.png" alt="Placeholder Image">
+        <img src="/images/img-intro.png" alt="Placeholder Image">
         
       </div>
       <div id="function-3" class="sub-content">
         <h2>最新消息</h2>
         <p class="mt-5">本區提供關於課程與計畫的最新資訊，歡迎學員不定期前往瀏覽。</p>
         <p class="mt-1">選擇想了解的項目，輕點即可展開內容。</p>
-        <img src="images/img-news.png" alt="Placeholder Image">
-        <img src="images/img-news-1.png" alt="Placeholder Image">
+        <img src="/images/img-news.png" alt="Placeholder Image">
+        <img src="/images/img-news-1.png" alt="Placeholder Image">
       
       </div>
       <div id="function-4" class="sub-content">
         <h2>常見問題</h2>
         <p class="mt-5">關於學員常見的問題將整理在本區，如有其他疑問也歡迎來信詢問<span style="background-color:#faab0e ;color:#fff;border-radius: 4px;" class="p-2">service99.isep@gmail.com</span></p>
         <p class="mt-1">選擇想了解的項目，輕點即可展開內容。</p>
-        <img src="images/img-QA.png" alt="Placeholder Image">
-        <img src="images/img-QA-1.png" alt="Placeholder Image">
+        <img src="/images/img-QA.png" alt="Placeholder Image">
+        <img src="/images/img-QA-1.png" alt="Placeholder Image">
       </div>
       <div id="function-5" class="sub-content">
         <h2>相關網站</h2>
         <p class="mt-5">本計畫由衛福部補助，協同資安院於完課測驗後頒發完課證書。</p>
-        <img src="images/img-link.png" alt="Placeholder Image">
+        <img src="/images/img-link.png" alt="Placeholder Image">
          
       </div>
       <div id="function-6" class="sub-content">
         <h2>參與課程</h2>
-        <p>下拉選單顯示<img class="imgSmall mx-2" src="images/img-class-point.png"> <a href="#classA">參與課程</a> <a href="#classB">課程列表</a> <a href="#classC">時數統計</a> <a href="#classD">滿意度調查</a> <a href="#classE">測驗清單</a>請點選想了解的項目前往。</p>
+        <p>下拉選單顯示<img class="imgSmall mx-2" src="/images/img-class-point.png"> <a href="#classA">參與課程</a> <a href="#classB">課程列表</a> <a href="#classC">時數統計</a> <a href="#classD">滿意度調查</a> <a href="#classE">測驗清單</a>請點選想了解的項目前往。</p>
         <div id="classA">
         <div class="title">參與課程</div>  
         <p class="mt-2">點選參與課程後，下方會顯示課程清單，並在<span style="background-color:#3d9970;color:#fff;border-radius: 4px;" class="p-2">進度</span>處顯示狀態。</p>
         <p class="mt-1">右側小方塊提供學員快速了解尚未完成滿意度與測驗的捷徑。</p>
-        <img src="images/img-class.png" alt="Placeholder Image">
+        <img src="/images/img-class.png" alt="Placeholder Image">
         </div>
         <div id="classB">
         <div class="title">課程列表</div>  
         <p class="mt-2">左側顯示各種類別的課程，請選擇想上的課程，點選該項目即可前往課程畫面。</p>
         <p class="mt-1">右側顯示各類課程開課的時間。</p>
-        <img src="images/img-calender.png" alt="Placeholder Image">
+        <img src="/images/img-calender.png" alt="Placeholder Image">
         </div>
         <div id="classC">
           <div class="title">時數統計</div>  
           <p class="mt-2">本區提供學員已完課的時數統計。</p>
-          <img src="images/img-classed.png" alt="Placeholder Image">
+          <img src="/images/img-classed.png" alt="Placeholder Image">
         </div>
         <div id="classD">
           <div class="title">滿意度調查</div>  
           <p class="mt-2">本區顯示已完成滿意度調查與尚未完成滿意度調查的列表。</p>
-          <img src="images/img-satisfy.png" alt="Placeholder Image">
+          <img src="/images/img-satisfy.png" alt="Placeholder Image">
         </div>
         <div id="classE">
           <div class="title">測驗清單</div>  
           <p class="mt-2">本區顯示已完成課程測驗與尚未完成課程測驗的列表。</p>
-          <img src="images/img-exam.png" alt="Placeholder Image">
+          <img src="/images/img-exam.png" alt="Placeholder Image">
         </div>
         
       </div>
       <div id="nameEp-1" class="sub-content">
         <h2>教材下載</h2>
         <p class="mt-5">每堂課程均附有教材，選擇<span style="background-color:#0e728c;color:#fff;border-radius: 4px;" class="p-2">參與課程</span>中的<span style="background-color:#e8e8e8;border-radius: 4px;" class="p-2">課程列表</span>左側選擇課程後進入課程清單畫面。</p>
-        <img src="images/img-selectDW.png" alt="Placeholder Image"> 
+        <img src="/images/img-selectDW.png" alt="Placeholder Image"> 
         <p class="mt-5">點選課程名稱旁的下載符號即可下載教材。</p>
-        <img src="images/img-download.png" alt="Placeholder Image"> 
+        <img src="/images/img-download.png" alt="Placeholder Image"> 
       </div>
       <div id="nameEp-2" class="sub-content">
         <h2>測驗</h2>
         <p class="mt-5">測驗完成後，出現前往滿意度調查的按鈕。</p>
         <p class="mt-2">請留下對課程、講師的寶貴意見，這是我們持續改進的動力，謝謝。</p>
-        <img src="images/img-exam-3.png" alt="Placeholder Image"> 
+        <img src="/images/img-exam-3.png" alt="Placeholder Image"> 
       </div>
       <div id="nameEp-3" class="sub-content">
         <h2>滿意度調查</h2>
         <p class="mt-5">測驗完成後，出現前往滿意度調查的按鈕。</p>
         <p class="mt-2">請留下對課程、講師的寶貴意見，這是我們持續改進的動力，謝謝。</p>
-        <img src="images/img-exam-3.png" alt="Placeholder Image"> 
+        <img src="/images/img-exam-3.png" alt="Placeholder Image"> 
       </div>
       <div class="row justify-content-center my-4" style="font-size: small;">
        
