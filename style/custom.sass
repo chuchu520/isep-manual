@@ -1,8 +1,8 @@
 $primaryColor: #0e728c
 $PrimaryColorDark: #083d4a
-$greenColor:#0bb779
+$greenColor:#3d9970
 $yellowColor: #eba000
-$blueColor: #0daed3 
+$blueColor: #0e728c
 $contentColor: #FFFEFA
 $indexColor: #9F8870
 $secondaryColor: #e6d9cc
@@ -14,7 +14,7 @@ $black: #000000
 $textColor: #333333
 $primaryColorLight: #19c4ef
 $dangerColor: #E64434
-
+$brownColor: #894610
 
 @mixin size ($w,$h:$w)
   width: $w
@@ -56,6 +56,36 @@ html,body
   overflow-y: auto
   transition: all 0.25s ease-in-out
 
+.blueTag
+  background-color: $blueColor
+  color: #fff
+  border-radius: 4px
+  padding: .5rem
+.brownTag
+  background-color: $brownColor
+  color: #fff
+  border-radius: 4px
+  padding: .5rem       
+.yellowTag
+  background-color: $yellowColor
+  color: #fff
+  border-radius: 4px
+  padding: .5rem    
+.greenTag
+  background-color: $greenColor
+  color: #fff
+  border-radius: 4px
+  padding: .5rem
+.redTag
+  background-color: #ff2889
+  color: #fff
+  border-radius: 4px
+  padding: .5rem  
+.greyTag
+  background-color: #e8e8e8
+  border-radius: 4px
+  padding: .5rem
+  color: #333    
 
 .sidebar
   position: fixed

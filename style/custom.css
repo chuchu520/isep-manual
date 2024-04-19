@@ -28,6 +28,48 @@ html, body {
   transition: all 0.25s ease-in-out;
 }
 
+.blueTag {
+  background-color: #0e728c;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.brownTag {
+  background-color: #894610;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.yellowTag {
+  background-color: #eba000;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.greenTag {
+  background-color: #3d9970;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.redTag {
+  background-color: #ff2889;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+.greyTag {
+  background-color: #e8e8e8;
+  border-radius: 4px;
+  padding: 0.5rem;
+  color: #333;
+}
+
 .sidebar {
   position: fixed;
   top: 0;
